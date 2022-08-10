@@ -10,7 +10,7 @@ public class UserRegistration {
 	 * First name starts with Cap and has minimum 3 characters
 	 */
 	public void firstName() {
-		System.out.print("Enter First Name :: " );
+		System.out.print("Enter First Name : " );
 		String FirstName = Utility.inputString();
 		boolean answer = Pattern.matches("([A-Z]*[a-z]*){2,}",FirstName);
 		if (answer) {
@@ -25,7 +25,7 @@ public class UserRegistration {
 	 * Last name starts with Cap and has minimum 3 characters
 	 */
 	public void lastName() {
-		System.out.print("Enter Last Name :: " );
+		System.out.print("Enter Last Name : " );
 		String LastName = Utility.inputString();
 		boolean answer = Pattern.matches("([A-Z]*[a-z]*){2,}",LastName);
 		if (answer) {
@@ -43,7 +43,7 @@ public class UserRegistration {
 	 * 2 optional (xyz & in) with precise @ and . positions
 	 */
 	public void email() {
-		System.out.print("Enter Email Id :: " );
+		System.out.print("Enter Email Id : " );
 		String Email = Utility.inputString();
 		boolean answer = Pattern.matches("[a-z]+([.][a-z]+)*@bl[.]co([.]in)*",Email);
 		if (answer) {
@@ -61,7 +61,7 @@ public class UserRegistration {
 	 */
 
 	public void mobileNumber() {
-		System.out.print("Enter MobileNumber :: " );
+		System.out.print("Enter MobileNumber : " );
 		String MobileNumber = sc.nextLine();
 		boolean answer = Pattern.matches("91\\s[6789]{1}[0-9]{9}",MobileNumber);
 		if (answer) {
@@ -71,6 +71,22 @@ public class UserRegistration {
         	System.out.println("Phone Number is Invalid ");
         }
 	}
+	/**
+	 * Password Rule 1
+	 * Minimum 8 Character
+	 */
+	 public void password1() {
+
+	        System.out.print("Enter password  :: " );
+	        String password = sc.nextLine();
+	        boolean answer = Pattern.matches("[a-zA-Z0-9]{8,}",password);
+	        if (answer) {
+	        	System.out.println("Password is Valid");
+	        }
+	        else {
+	        	System.out.println("Password is Not Valid");
+	        }
+	 }
 
 
 

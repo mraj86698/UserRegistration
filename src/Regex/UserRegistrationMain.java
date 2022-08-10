@@ -9,6 +9,7 @@ public class UserRegistrationMain {
 		user.lastName();
 		user.email();
 		user.mobileNumber();
+		user.password1();
 
 	}
 
