@@ -13,6 +13,7 @@ public class UserRegistrationMain {
 		user.password2();
 		user.password3();
 		user.password4();
+		user.emailValidation();
 
 	}
 

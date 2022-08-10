@@ -138,6 +138,25 @@ public class UserRegistration {
 			System.out.println("Password is Not Valid");
 		}
 	}
+	/**
+	 * Validation of Email Id
+	 * A-Z characters allowed
+	 * a-z characters allowed
+	 * 0-9 numbers allowed
+	 * Additionally email may contain only dot(.), dash(-) and underscore(_)
+	 * Rest all characters are not allowed.
+	 */
+
+	public void emailValidation() {
+		System.out.print("Enter Email Id : ");
+		String Email = Utility.inputString();
+		boolean answer = Pattern.matches("^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$", Email);
+		if (answer) {
+			System.out.println("Email is Valid");
+		} else {
+			System.out.println("Email is Invalid ");
+		}
+	}
 
 
 }
