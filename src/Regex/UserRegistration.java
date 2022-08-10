@@ -119,5 +119,25 @@ public class UserRegistration {
 			System.out.println("Password is Not Valid");
 		}
 	}
+	/**
+	 * Password Rule 2
+	 * Minimum 8 Character
+	 * AtLeast 1 UpperCase
+	 * AtLeast 1 Numeric Number
+	 * Atleast 1 Special Character
+	 */
+
+	public void password4() {
+
+		System.out.print("Enter password  :: ");
+		String password = sc.nextLine();
+		boolean answer = Pattern.matches("[A-Z]+[a-z]{5,}+[0-9]+[*.!@#$%^&(){}[]:;<>,.?/~_+-=|\\]", password);
+		if (answer) {
+			System.out.println("Password is Valid");
+		} else {
+			System.out.println("Password is Not Valid");
+		}
+	}
+
 
 }
