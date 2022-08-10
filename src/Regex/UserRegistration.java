@@ -1,8 +1,10 @@
 package Regex;
 
+import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
+	Scanner sc = new Scanner(System.in);
 	/**
 	 * Validation for first Name
 	 * First name starts with Cap and has minimum 3 characters
@@ -51,6 +53,26 @@ public class UserRegistration {
         	System.out.println("Email is Invalid ");
         }
 	}
+
+	/**
+	 * Validation for Mobile Number
+	 * E.g. 91 9374930253
+	 * Country code Follow by space  and 10 digit number.
+	 */
+
+	public void mobileNumber() {
+		System.out.print("Enter MobileNumber :: " );
+		String MobileNumber = sc.nextLine();
+		boolean answer = Pattern.matches("91\\s[6789]{1}[0-9]{9}",MobileNumber);
+		if (answer) {
+			System.out.println("Phone Number is Valid");
+		}
+        else {
+        	System.out.println("Phone Number is Invalid ");
+        }
+	}
+
+
 
 
 
