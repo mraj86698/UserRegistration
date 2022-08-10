@@ -12,6 +12,7 @@ public class UserRegistrationMain {
 		user.password1();
 		user.password2();
 		user.password3();
+		user.password4();
 
 	}
 
