@@ -88,6 +88,24 @@ public class UserRegistration {
 	        }
 	 }
 
+	 /**
+		 * Password Rule 2
+		 * Minimum 8 Character
+		 * AtLewast 1 UpperCase
+		 */
+		 public void password2() {
+
+		        System.out.print("Enter password  :: " );
+		        String password = sc.nextLine();
+		        boolean answer = Pattern.matches("[A-Z]+[a-z0-9]{8,}",password);
+		        if (answer) {
+		        	System.out.println("Password is Valid");
+		        }
+		        else {
+		        	System.out.println("Password is Not Valid");
+		        }
+		 }
+
 
 
 

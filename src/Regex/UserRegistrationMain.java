@@ -10,6 +10,7 @@ public class UserRegistrationMain {
 		user.email();
 		user.mobileNumber();
 		user.password1();
+		user.password2();
 
 	}
 
