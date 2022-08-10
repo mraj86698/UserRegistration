@@ -11,6 +11,7 @@ public class UserRegistrationMain {
 		user.mobileNumber();
 		user.password1();
 		user.password2();
+		user.password3();
 
 	}
 
